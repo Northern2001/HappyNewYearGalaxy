@@ -7,18 +7,23 @@
   background-color: #fbd7c3;
   background-image: url(../img_2024/bg_hoadao.jpg);
   background-size: cover;
-
-
 }
 
-#bg {
+#bg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .8;
   /* height: 100vh; */
+  z-index: 0;
   background-repeat: no-repeat;
-  background-color: #fbd7c3;
-  /* background-color: red; */
+  background-image: url(../img/bg.webp);
   background-size: cover;
   background-position: 50%;
 }
+
 .items_pic button {
   width: 100px;
   height: 100px;
@@ -33,7 +38,7 @@
   background-color: white;
   border: solid #f76048 5px;
   border-radius: 10px;
-  width: 1500px;
+  width: 1700px;
   padding-bottom: 20px;
   padding-right: 20px;
 }
@@ -60,8 +65,8 @@
 
 
 .grid-item img {
-  width: 200px;
-  height: 250px;
+  width: 250px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -157,4 +162,6 @@ header h4 {
   background-size: 200px 100px !important;
 }
 
-
+.swal2-title, .swal2-content{
+  color: azure !important;
+}

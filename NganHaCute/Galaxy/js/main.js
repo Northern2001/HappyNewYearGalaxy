@@ -1,7 +1,5 @@
 
 function init() {
-    var audio = new Audio('sound/tetonroi.mp3');
-    audio.play();
     $('#title').text(CONFIG.title)
     $('#desc').text(CONFIG.desc)
     $('#yes').text(CONFIG.btnYes)
@@ -14,7 +12,7 @@ var slideIndex = 1;
 $(document).ready(function () {
     // process bar
     setTimeout(function () {
-        // firstQuestion();
+        firstQuestion();
         $('.spinner').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350).css({
@@ -52,7 +50,10 @@ function firstQuestion() {
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
     }).then(function () {
+        var audio = new Audio('sound/tetonroi.mp3');
+        audio.play();
         $('.content').show(200);
+        $('#bg').hide();
     })
 }
 
