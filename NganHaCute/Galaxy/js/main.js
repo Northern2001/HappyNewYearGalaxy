@@ -1,3 +1,14 @@
+
+function init() {
+    var audio = new Audio('sound/tetonroi.mp3');
+    audio.play();
+    $('#title').text(CONFIG.title)
+    $('#desc').text(CONFIG.desc)
+    $('#yes').text(CONFIG.btnYes)
+    $('#no').text(CONFIG.btnNo)
+}
+
+init()
 var slideIndex = 1;
 
 $(document).ready(function () {
@@ -11,16 +22,6 @@ $(document).ready(function () {
         });
     }, 600);
 })
-
-function init() {
-    var audio = new Audio('sound/tetonroi.mp3');
-    audio.play();
-    $('#title').text(CONFIG.title)
-    $('#desc').text(CONFIG.desc)
-    $('#yes').text(CONFIG.btnYes)
-    $('#no').text(CONFIG.btnNo)
-}
-
 
 showDivs(slideIndex);
 
@@ -80,7 +81,6 @@ function moveButton() {
     $('#no').css("top", top);
 }
 
-init()
 
 var n = 0;
 $('#no').mousemove(function () {
