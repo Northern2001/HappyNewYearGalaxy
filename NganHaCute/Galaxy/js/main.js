@@ -1,3 +1,5 @@
+var slideIndex = 1;
+
 $(document).ready(function () {
     // process bar
     setTimeout(function () {
@@ -11,10 +13,30 @@ $(document).ready(function () {
 })
 
 function init() {
+    var audio = new Audio('sound/tetonroi.mp3');
+    audio.play();
     $('#title').text(CONFIG.title)
     $('#desc').text(CONFIG.desc)
     $('#yes').text(CONFIG.btnYes)
     $('#no').text(CONFIG.btnNo)
+}
+
+
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("items_pic");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
 }
 
 function firstQuestion() {

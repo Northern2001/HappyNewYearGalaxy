@@ -32,8 +32,13 @@
         <div class="rect5"></div>
       </div>
     </div>
-    <div id="bg"></div>
     <div class="content" class="w3-content w3-display-container">
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+      <div class="items_pic">
+      </div>
+      
       <div class="items_pic">
         <div class="title_abc">
           <img src="img_2024/lixi.jpg" />
@@ -117,9 +122,6 @@
           </div>
         </div>
       </div>
-      <div class="items_pic">
-
-      </div>
 
       <!-- <header> -->
       <!-- <h2 id="title">Chúc mừng năm mới Ngân Hà của anh nhé 💕 </h2> -->
@@ -129,12 +131,11 @@
       <button id="no" bg.webptype="button" class="btn btn-info btn-lg"></button> -->
 
       <!-- silder  -->
-
     </div>
   </div>
-  <audio src="./sound/tetonroi.mp3" autoplay></audio>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -146,29 +147,6 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="./config.js"></script>
   <script src="./js/main.js"></script>
-
- <!-- for slider -->
-  <script>
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("items_pic");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-      }
-      x[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " w3-opacity-off";
-    }
-    </script>
 
 </body>
 

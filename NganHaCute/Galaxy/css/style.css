@@ -1,40 +1,21 @@
 .content {
   width: 100%;
-  display: inline-block;
-  position: absolute;
-  top: 2%;
-  left: 0.7%;
-  z-index: 3;
-}
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbd7c3;
+  background-image: url(../img_2024/bg_hoadao.jpg);
+  background-size: cover;
 
-#no {
-  position: absolute;
-  display: inline-block;
-  left: 35%;
-  top: 40vh;
-  -webkit-transition: all 0.1s ease-out;
-}
 
-#yes {
-  position: absolute;
-  display: inline-block;
-  left: 70%;
-  top: 40vh;
-  -webkit-transition: all 0.3s ease-out;
 }
 
 #bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   /* height: 100vh; */
-  z-index: 0;
   background-repeat: no-repeat;
   background-color: #fbd7c3;
   /* background-color: red; */
-  /* background-image: url(../img_2024/bg_2.webp); */
   background-size: cover;
   background-position: 50%;
 }
