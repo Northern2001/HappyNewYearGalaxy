@@ -46,6 +46,7 @@ function firstQuestion() {
         imageUrl: 'img/galaxy.jpg',
         imageWidth: 300,
         imageHeight: 300,
+        html: "<span>Năm 2024 em muốn gửi lời nhắn gì cho anh khum  <br> <br><span/> <input type='text' class='form-control' onmousemove=textGenerate()  placeholder='Yêu anh chứ gì :v'>",
         background: '#fff url("img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro

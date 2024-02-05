@@ -1,9 +1,7 @@
 const CONFIG = {
-    introTitle: 'Babe à!',
-    introDesc: `Chúc Galaxy sinh nhật vui vẻ nhé
-    ngày càng xinh đẹp hơn nha, sinh nhật năm anh anh không bên em
-    nhưng năm sau thì sẽ khác nhaaa <3`,
-    btnIntro: 'Click here to send your love to me',
+    introTitle: 'Chào Cưng',
+    introDesc: `Năm 2024 em muốn gửi lời nhắn gì cho anh khum`,
+    btnIntro: 'Gửi anh yêu',
     title: ' Anh mong là em không rời xa anh nhá 😙',
     desc: 'Do you love Me ',
     btnYes: 'Vẫn cứ là yêu anh <33',
